@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#00172b, #041966);
+    font-family: 'Poppins', sans-serif;
+    color: #fff; 
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Estilos para los labels */
+label {
+    display: block;
+     margin-top: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Input de longitud */
+input[type="number"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #2a00b7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #2a00b7;/* Cambiar el color del checkbox al principal */
+     
+}
+
+/* Botón de generar contraseña */
+.generateBtn {
+    width: 100%;
+    padding: 12px;
+    background:  #2a00b7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.generateBtn:hover {
+    opacity: 0.9;
+}
+
+/* Display de contraseña generada */
+ /* Contenedor de la contraseña y botón de copiar */
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Display de contraseña generada */
+.password-display {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    border: none;
+    color: #2a00b7;
+    background-color: #e2e2e2;
+    font-size: 15px;
+}
+
+/* Botón de copiar */
+.copy-btn {
+    padding: 10px 15px;
+    background: #2a00b7;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copy-btn:hover {
+    opacity: 0.9;
+}
+
+/* Icono de copiar */
+.copy-btn i {
+    pointer-events: none;
+}
